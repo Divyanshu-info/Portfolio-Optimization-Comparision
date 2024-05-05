@@ -1,0 +1,54 @@
+\newpage
+\setcounter{page}{1}
+\pagenumbering{arabic}
+\chapter{Introduction}
+\label{introchap}
+
+In section \ref{I_context} of this chapter, an overview of the background for the Portfolio Optimisation project is provided. The study work flow is then introduced step by step in section \ref{I_objective} as a result of the motives that have been provided. The motivation is discussed in section \ref{I_Motivation}. The Research Workflow are then described in section \ref{I_workflow}.
+
+\section{Context}\label{I_context}
+Portfolio optimization is a crucial element of asset management, aiming to maximize returns at a given risk level by selecting the optimal asset distribution within a portfolio. This concept was first pioneered by 
+\Citep{Markowitz1952} leading to the development of Modern Portfolio Theory (MPT).
+
+The primary advantage of constructing a diversified portfolio is the ability to reduce risk and create a smoother equity curve. Diversification allows for a higher return per unit of risk compared to investing solely in individual assets. This principle holds true as long as the assets in the portfolio are not highly correlated.
+
+Indeed, while the benefits of diversification in portfolio allocation are indisputable, the process of selecting the "optimal" asset allocations is far from straightforward. This complexity arises from the dynamic nature of financial markets, which undergo significant changes over time. Assets that have exhibited strong negative correlations in the past may become positively correlated in the future, introducing an additional layer of risk and potentially compromising the portfolio's future performance.
+
+Furthermore, the sheer breadth of available assets for portfolio construction poses a formidable challenge. For instance, in the context of the U.S. stock markets alone, there are more than 5000 individual stocks to consider. Additionally, a well-structured portfolio often extends beyond equities and may include bonds and commodities, significantly expanding the array of options available for allocation.
+
+\section{Objectives}\label{I_objective}
+To overcome the limitations associated with traditional mean-variance methods based on quadratic optimization, researchers have explored novel approaches in the field of portfolio optimization. These alternatives encompass both statistical and machine learning methods, offering promising avenues for improving portfolio management strategies.
+
+Statistical approaches have been a focus of attention in this study. These methods include Autoregressive Conditional Heteroscedasticity (ARCH) introduced by \Citep{Engle1987251} Autoregressive Integrated Moving Average (ARIMA), and Generalized Autoregressive Conditional Heteroscedasticity (GARCH) proposed by \Citep{Bollerslev1986307}. These statistical techniques have traditionally been employed to model financial time series data and capture volatility dynamics.
+
+In recent times, machine learning methods have gained significant traction for portfolio optimization, particularly in the context of forecasting. Approaches such as Neural Networks (NNs) \citep{Bisoi2019652} Support Vector Regression (SVR) \citep{Chen2015435} and ensemble learning \citep{Zhou2019} have become popular choices. According to several comparative studies, machine learning exhibits greater capability in handling non-linear and non-stationary situations compared to statistical methods \citep{Wang2020}.
+
+In addition to using machine learning models for return prediction in portfolio construction, this study introduces advanced methods that leverage Deep learning to directly optimize portfolios. This approach deviates from traditional techniques \citep{McNeil20151} which typically involve forecasting projected returns, often using econometric models. Notably, these prediction stages do not guarantee optimal portfolio performance \citep{Moody1998441} as they seek to minimize a prediction loss that does not necessarily align with maximizing the portfolio's total gains.
+
+In contrast, the proposed method focuses on optimizing the Sharpe ratio, which represents the return on investment per unit of risk. By directly optimizing this metric, it aims to enhance portfolio performance, offering a different and potentially more effective approach to portfolio optimization compared to traditional methods.
+
+This innovative approach underscores the evolving landscape of portfolio optimization, as researchers increasingly explore machine learning and Deep learning techniques to address the challenges and complexities of modern financial markets.
+
+\section{Motivation}\label{I_Motivation}
+
+In recent years, there has been a growing utilization of machine learning techniques within the realm of finance, potentially influencing how hedge fund managers perceive the risk-reward ratio in financial markets \citep{Wu20218119}. Notably, advanced machine learning algorithms have demonstrated remarkable achievements in various domains, including video games \citep{Mnih2015529} and board games \citep{Silver2016484}.
+
+Following the historic victory of the computer program AlphaGo over Lee Sedol, one of the most formidable human players in the game of Go, in 2016, professionals in the financial trading sector have developed a keen interest in deep learning methods, particularly Deep reinforcement learning \citep{meng2019reinforcement}.
+
+Machine learning techniques offer substantial potential in portfolio construction, with deep learning assuming an increasingly pivotal role within the industry \citep{Bartram20219}. This shift underscores the importance of leveraging advanced computational approaches to enhance decision-making processes and manage investment portfolios effectively.
+
+Furthermore, in the context of wealth management, \citep{li2020asset} have highlighted the effective application of deep learning techniques, in optimizing asset allocation strategies. This indicates that machine learning, and deep learning in particular, have become integral tools for financial professionals seeking to navigate the complexities of modern wealth management and investment strategies.
+
+
+
+
+\section{Project work flow}\label{I_workflow}
+The primary objective of this study is to conduct a comprehensive performance comparison of ten distinct portfolio construction methodologies, encompassing a wide array of approaches mentioned in the finance literature. These methodologies include mean-variance techniques (such as equally weighted portfolios, portfolios maximizing the Sharpe ratio, minimum variance portfolios, and portfolios aiming to maximize decorrelation), statistical approaches (comprising hierarchical risk parity, principal component analysis, and Holt's smoothing process), as well as deep learning models implemented through deep neural networks.
+
+Financial asset prices exhibit a strong connection to their volatility patterns over time. Naturally, the predictability of stable stocks tends to surpass that of stocks with relatively higher levels of price noise. Therefore, to provide a more comprehensive assessment of the performance of various portfolio construction methods, the study incorporates multiple timeframes and asset types in its experimental design. This multifaceted approach allows for a more holistic understanding of how these methods perform under varying conditions.
+
+The research employs two distinct experimental designs, each representing different timeframes and asset types. This approach enables a nuanced evaluation of the portfolio construction methods' effectiveness across diverse contexts, taking into account the varying characteristics of assets over different time horizons.
+
+Additionally, to enhance the comparability of the methods under investigation, the study adopts a standardized input framework. Specifically, historical closing prices of financial assets serve as the sole input for all models. This standardized input approach ensures a level playing field, allowing for a fair comparison of the ability of these methods to process and leverage non-linear relationships. Notably, deep learning, as well as reinforcement learning, have demonstrated the capability to harness such non-linear relationships, potentially leading to superior results when compared to more linear methods commonly employed in portfolio construction.
+
+In summary, this study adopts a rigorous and systematic approach to evaluate the performance of various portfolio construction methods, encompassing mean-variance, statistical, and deep learning techniques. By considering different timeframes, asset types, and utilizing a consistent input framework, the research aims to provide valuable insights into the effectiveness of these methods in optimizing portfolio construction within the realm of finance.

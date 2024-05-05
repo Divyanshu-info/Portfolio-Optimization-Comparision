@@ -1,0 +1,198 @@
+2024-03-12 17:20:00,723:WARNING:c:\Users\1000305366\Personal\.venv\lib\site-packages\IPython\core\formatters.py:347: FutureWarning: Index.format is deprecated and will be removed in a future version. Convert using index.astype(str) or index.map(formatter) instead.
+  return method()
+
+2024-03-12 17:20:00,727:WARNING:c:\Users\1000305366\Personal\.venv\lib\site-packages\IPython\core\formatters.py:347: FutureWarning: DatetimeIndex.format is deprecated and will be removed in a future version. Convert using index.astype(str) or index.map(formatter) instead.
+  return method()
+
+2024-03-12 17:20:21,344:WARNING:c:\Users\1000305366\Personal\.venv\lib\site-packages\IPython\core\formatters.py:347: FutureWarning: Index.format is deprecated and will be removed in a future version. Convert using index.astype(str) or index.map(formatter) instead.
+  return method()
+
+2024-03-12 17:20:21,347:WARNING:c:\Users\1000305366\Personal\.venv\lib\site-packages\IPython\core\formatters.py:347: FutureWarning: PeriodIndex.format is deprecated and will be removed in a future version. Convert using index.astype(str) or index.map(formatter) instead.
+  return method()
+
+2024-03-12 17:20:53,959:WARNING:c:\Users\1000305366\Personal\.venv\lib\site-packages\IPython\core\formatters.py:347: FutureWarning: Index.format is deprecated and will be removed in a future version. Convert using index.astype(str) or index.map(formatter) instead.
+  return method()
+
+2024-03-12 17:20:53,966:WARNING:c:\Users\1000305366\Personal\.venv\lib\site-packages\IPython\core\formatters.py:347: FutureWarning: PeriodIndex.format is deprecated and will be removed in a future version. Convert using index.astype(str) or index.map(formatter) instead.
+  return method()
+
+2024-03-12 17:21:44,074:WARNING:c:\Users\1000305366\Personal\.venv\lib\site-packages\pandas\core\nanops.py:1016: RuntimeWarning: invalid value encountered in subtract
+  # unless we were dealing with a float array, in which case use the same
+
+2024-03-12 17:21:44,084:WARNING:c:\Users\1000305366\Personal\.venv\lib\site-packages\IPython\core\formatters.py:347: FutureWarning: Index.format is deprecated and will be removed in a future version. Convert using index.astype(str) or index.map(formatter) instead.
+  return method()
+
+2024-03-12 17:21:44,088:WARNING:c:\Users\1000305366\Personal\.venv\lib\site-packages\IPython\core\formatters.py:347: FutureWarning: DatetimeIndex.format is deprecated and will be removed in a future version. Convert using index.astype(str) or index.map(formatter) instead.
+  return method()
+
+2024-03-12 17:26:06,966:WARNING:c:\Users\1000305366\Personal\.venv\lib\site-packages\IPython\core\formatters.py:347: FutureWarning: Index.format is deprecated and will be removed in a future version. Convert using index.astype(str) or index.map(formatter) instead.
+  return method()
+
+2024-03-12 17:26:06,966:WARNING:c:\Users\1000305366\Personal\.venv\lib\site-packages\IPython\core\formatters.py:347: FutureWarning: DatetimeIndex.format is deprecated and will be removed in a future version. Convert using index.astype(str) or index.map(formatter) instead.
+  return method()
+
+2024-03-12 17:26:06,999:WARNING:c:\Users\1000305366\Personal\.venv\lib\site-packages\IPython\core\formatters.py:347: FutureWarning: Index.format is deprecated and will be removed in a future version. Convert using index.astype(str) or index.map(formatter) instead.
+  return method()
+
+2024-03-12 17:26:07,001:WARNING:c:\Users\1000305366\Personal\.venv\lib\site-packages\IPython\core\formatters.py:347: FutureWarning: PeriodIndex.format is deprecated and will be removed in a future version. Convert using index.astype(str) or index.map(formatter) instead.
+  return method()
+
+2024-03-12 17:26:07,061:WARNING:c:\Users\1000305366\Personal\.venv\lib\site-packages\pandas\core\nanops.py:1016: RuntimeWarning: invalid value encountered in subtract
+  # unless we were dealing with a float array, in which case use the same
+
+2024-03-12 17:26:07,068:WARNING:c:\Users\1000305366\Personal\.venv\lib\site-packages\IPython\core\formatters.py:347: FutureWarning: Index.format is deprecated and will be removed in a future version. Convert using index.astype(str) or index.map(formatter) instead.
+  return method()
+
+2024-03-12 17:26:07,071:WARNING:c:\Users\1000305366\Personal\.venv\lib\site-packages\IPython\core\formatters.py:347: FutureWarning: DatetimeIndex.format is deprecated and will be removed in a future version. Convert using index.astype(str) or index.map(formatter) instead.
+  return method()
+
+2024-03-12 17:28:31,710:WARNING:c:\Users\1000305366\Personal\.venv\lib\site-packages\IPython\core\formatters.py:347: FutureWarning: Index.format is deprecated and will be removed in a future version. Convert using index.astype(str) or index.map(formatter) instead.
+  return method()
+
+2024-03-12 17:28:31,711:WARNING:c:\Users\1000305366\Personal\.venv\lib\site-packages\IPython\core\formatters.py:347: FutureWarning: PeriodIndex.format is deprecated and will be removed in a future version. Convert using index.astype(str) or index.map(formatter) instead.
+  return method()
+
+2024-03-12 17:28:38,672:WARNING:c:\Users\1000305366\Personal\.venv\lib\site-packages\IPython\core\formatters.py:347: FutureWarning: Index.format is deprecated and will be removed in a future version. Convert using index.astype(str) or index.map(formatter) instead.
+  return method()
+
+2024-03-12 17:30:17,729:WARNING:c:\Users\1000305366\Personal\.venv\lib\site-packages\IPython\core\formatters.py:347: FutureWarning: Index.format is deprecated and will be removed in a future version. Convert using index.astype(str) or index.map(formatter) instead.
+  return method()
+
+2024-03-12 17:30:17,729:WARNING:c:\Users\1000305366\Personal\.venv\lib\site-packages\IPython\core\formatters.py:347: FutureWarning: DatetimeIndex.format is deprecated and will be removed in a future version. Convert using index.astype(str) or index.map(formatter) instead.
+  return method()
+
+2024-03-12 17:36:54,130:WARNING:c:\Users\1000305366\Personal\.venv\lib\site-packages\pandas\core\nanops.py:1016: RuntimeWarning: invalid value encountered in subtract
+  # unless we were dealing with a float array, in which case use the same
+
+2024-03-12 17:36:54,136:WARNING:c:\Users\1000305366\Personal\.venv\lib\site-packages\IPython\core\formatters.py:347: FutureWarning: Index.format is deprecated and will be removed in a future version. Convert using index.astype(str) or index.map(formatter) instead.
+  return method()
+
+2024-03-12 17:36:54,136:WARNING:c:\Users\1000305366\Personal\.venv\lib\site-packages\IPython\core\formatters.py:347: FutureWarning: DatetimeIndex.format is deprecated and will be removed in a future version. Convert using index.astype(str) or index.map(formatter) instead.
+  return method()
+
+2024-03-12 17:37:29,176:WARNING:c:\Users\1000305366\Personal\.venv\lib\site-packages\IPython\core\formatters.py:347: FutureWarning: Index.format is deprecated and will be removed in a future version. Convert using index.astype(str) or index.map(formatter) instead.
+  return method()
+
+2024-03-12 17:37:29,176:WARNING:c:\Users\1000305366\Personal\.venv\lib\site-packages\IPython\core\formatters.py:347: FutureWarning: DatetimeIndex.format is deprecated and will be removed in a future version. Convert using index.astype(str) or index.map(formatter) instead.
+  return method()
+
+2024-03-12 17:37:29,196:WARNING:c:\Users\1000305366\Personal\.venv\lib\site-packages\IPython\core\formatters.py:347: FutureWarning: Index.format is deprecated and will be removed in a future version. Convert using index.astype(str) or index.map(formatter) instead.
+  return method()
+
+2024-03-12 17:37:29,201:WARNING:c:\Users\1000305366\Personal\.venv\lib\site-packages\IPython\core\formatters.py:347: FutureWarning: DatetimeIndex.format is deprecated and will be removed in a future version. Convert using index.astype(str) or index.map(formatter) instead.
+  return method()
+
+2024-03-12 17:37:29,257:WARNING:c:\Users\1000305366\Personal\.venv\lib\site-packages\pandas\core\nanops.py:1016: RuntimeWarning: invalid value encountered in subtract
+  # unless we were dealing with a float array, in which case use the same
+
+2024-03-12 17:37:29,263:WARNING:c:\Users\1000305366\Personal\.venv\lib\site-packages\IPython\core\formatters.py:347: FutureWarning: Index.format is deprecated and will be removed in a future version. Convert using index.astype(str) or index.map(formatter) instead.
+  return method()
+
+2024-03-12 17:37:29,266:WARNING:c:\Users\1000305366\Personal\.venv\lib\site-packages\IPython\core\formatters.py:347: FutureWarning: DatetimeIndex.format is deprecated and will be removed in a future version. Convert using index.astype(str) or index.map(formatter) instead.
+  return method()
+
+2024-03-12 17:39:27,635:WARNING:c:\Users\1000305366\Personal\.venv\lib\site-packages\IPython\core\formatters.py:347: FutureWarning: Index.format is deprecated and will be removed in a future version. Convert using index.astype(str) or index.map(formatter) instead.
+  return method()
+
+2024-03-12 17:39:27,637:WARNING:c:\Users\1000305366\Personal\.venv\lib\site-packages\IPython\core\formatters.py:347: FutureWarning: DatetimeIndex.format is deprecated and will be removed in a future version. Convert using index.astype(str) or index.map(formatter) instead.
+  return method()
+
+2024-03-12 17:39:27,691:WARNING:c:\Users\1000305366\Personal\.venv\lib\site-packages\pandas\core\nanops.py:1016: RuntimeWarning: invalid value encountered in subtract
+  # unless we were dealing with a float array, in which case use the same
+
+2024-03-12 17:39:27,700:WARNING:c:\Users\1000305366\Personal\.venv\lib\site-packages\IPython\core\formatters.py:347: FutureWarning: Index.format is deprecated and will be removed in a future version. Convert using index.astype(str) or index.map(formatter) instead.
+  return method()
+
+2024-03-12 17:39:27,704:WARNING:c:\Users\1000305366\Personal\.venv\lib\site-packages\IPython\core\formatters.py:347: FutureWarning: DatetimeIndex.format is deprecated and will be removed in a future version. Convert using index.astype(str) or index.map(formatter) instead.
+  return method()
+
+2024-03-12 17:39:34,424:WARNING:c:\Users\1000305366\Personal\.venv\lib\site-packages\IPython\core\formatters.py:347: FutureWarning: Index.format is deprecated and will be removed in a future version. Convert using index.astype(str) or index.map(formatter) instead.
+  return method()
+
+2024-03-12 17:39:34,426:WARNING:c:\Users\1000305366\Personal\.venv\lib\site-packages\IPython\core\formatters.py:347: FutureWarning: DatetimeIndex.format is deprecated and will be removed in a future version. Convert using index.astype(str) or index.map(formatter) instead.
+  return method()
+
+2024-03-12 17:39:34,496:WARNING:c:\Users\1000305366\Personal\.venv\lib\site-packages\IPython\core\formatters.py:347: FutureWarning: Index.format is deprecated and will be removed in a future version. Convert using index.astype(str) or index.map(formatter) instead.
+  return method()
+
+2024-03-12 17:39:34,500:WARNING:c:\Users\1000305366\Personal\.venv\lib\site-packages\IPython\core\formatters.py:347: FutureWarning: DatetimeIndex.format is deprecated and will be removed in a future version. Convert using index.astype(str) or index.map(formatter) instead.
+  return method()
+
+2024-03-12 17:40:57,596:WARNING:c:\Users\1000305366\Personal\.venv\lib\site-packages\IPython\core\formatters.py:347: FutureWarning: Index.format is deprecated and will be removed in a future version. Convert using index.astype(str) or index.map(formatter) instead.
+  return method()
+
+2024-03-12 17:40:57,602:WARNING:c:\Users\1000305366\Personal\.venv\lib\site-packages\IPython\core\formatters.py:347: FutureWarning: DatetimeIndex.format is deprecated and will be removed in a future version. Convert using index.astype(str) or index.map(formatter) instead.
+  return method()
+
+2024-03-12 17:40:57,667:WARNING:c:\Users\1000305366\Personal\.venv\lib\site-packages\IPython\core\formatters.py:347: FutureWarning: Index.format is deprecated and will be removed in a future version. Convert using index.astype(str) or index.map(formatter) instead.
+  return method()
+
+2024-03-12 17:40:57,671:WARNING:c:\Users\1000305366\Personal\.venv\lib\site-packages\IPython\core\formatters.py:347: FutureWarning: DatetimeIndex.format is deprecated and will be removed in a future version. Convert using index.astype(str) or index.map(formatter) instead.
+  return method()
+
+2024-03-12 17:46:05,603:WARNING:c:\Users\1000305366\Personal\.venv\lib\site-packages\IPython\core\formatters.py:347: FutureWarning: Index.format is deprecated and will be removed in a future version. Convert using index.astype(str) or index.map(formatter) instead.
+  return method()
+
+2024-03-12 17:46:05,604:WARNING:c:\Users\1000305366\Personal\.venv\lib\site-packages\IPython\core\formatters.py:347: FutureWarning: DatetimeIndex.format is deprecated and will be removed in a future version. Convert using index.astype(str) or index.map(formatter) instead.
+  return method()
+
+2024-03-12 17:46:55,622:WARNING:c:\Users\1000305366\Personal\.venv\lib\site-packages\IPython\core\formatters.py:347: FutureWarning: Index.format is deprecated and will be removed in a future version. Convert using index.astype(str) or index.map(formatter) instead.
+  return method()
+
+2024-03-12 17:46:55,622:WARNING:c:\Users\1000305366\Personal\.venv\lib\site-packages\IPython\core\formatters.py:347: FutureWarning: DatetimeIndex.format is deprecated and will be removed in a future version. Convert using index.astype(str) or index.map(formatter) instead.
+  return method()
+
+2024-03-12 17:46:55,685:WARNING:c:\Users\1000305366\Personal\.venv\lib\site-packages\IPython\core\formatters.py:347: FutureWarning: Index.format is deprecated and will be removed in a future version. Convert using index.astype(str) or index.map(formatter) instead.
+  return method()
+
+2024-03-12 17:46:55,688:WARNING:c:\Users\1000305366\Personal\.venv\lib\site-packages\IPython\core\formatters.py:347: FutureWarning: DatetimeIndex.format is deprecated and will be removed in a future version. Convert using index.astype(str) or index.map(formatter) instead.
+  return method()
+
+2024-03-12 18:19:53,953:WARNING:c:\Users\1000305366\Personal\.venv\lib\site-packages\IPython\core\formatters.py:347: FutureWarning: Index.format is deprecated and will be removed in a future version. Convert using index.astype(str) or index.map(formatter) instead.
+  return method()
+
+2024-03-12 18:19:53,955:WARNING:c:\Users\1000305366\Personal\.venv\lib\site-packages\IPython\core\formatters.py:347: FutureWarning: DatetimeIndex.format is deprecated and will be removed in a future version. Convert using index.astype(str) or index.map(formatter) instead.
+  return method()
+
+2024-03-12 18:19:54,012:WARNING:c:\Users\1000305366\Personal\.venv\lib\site-packages\IPython\core\formatters.py:347: FutureWarning: Index.format is deprecated and will be removed in a future version. Convert using index.astype(str) or index.map(formatter) instead.
+  return method()
+
+2024-03-12 18:19:54,015:WARNING:c:\Users\1000305366\Personal\.venv\lib\site-packages\IPython\core\formatters.py:347: FutureWarning: DatetimeIndex.format is deprecated and will be removed in a future version. Convert using index.astype(str) or index.map(formatter) instead.
+  return method()
+
+2024-03-12 18:20:39,563:WARNING:c:\Users\1000305366\Personal\.venv\lib\site-packages\IPython\core\formatters.py:347: FutureWarning: Index.format is deprecated and will be removed in a future version. Convert using index.astype(str) or index.map(formatter) instead.
+  return method()
+
+2024-03-12 18:20:39,563:WARNING:c:\Users\1000305366\Personal\.venv\lib\site-packages\IPython\core\formatters.py:347: FutureWarning: DatetimeIndex.format is deprecated and will be removed in a future version. Convert using index.astype(str) or index.map(formatter) instead.
+  return method()
+
+2024-03-12 18:20:39,632:WARNING:c:\Users\1000305366\Personal\.venv\lib\site-packages\IPython\core\formatters.py:347: FutureWarning: Index.format is deprecated and will be removed in a future version. Convert using index.astype(str) or index.map(formatter) instead.
+  return method()
+
+2024-03-12 18:20:39,636:WARNING:c:\Users\1000305366\Personal\.venv\lib\site-packages\IPython\core\formatters.py:347: FutureWarning: DatetimeIndex.format is deprecated and will be removed in a future version. Convert using index.astype(str) or index.map(formatter) instead.
+  return method()
+
+2024-03-12 18:34:41,358:WARNING:c:\Users\1000305366\Personal\.venv\lib\site-packages\IPython\core\formatters.py:347: FutureWarning: Index.format is deprecated and will be removed in a future version. Convert using index.astype(str) or index.map(formatter) instead.
+  return method()
+
+2024-03-12 18:34:41,358:WARNING:c:\Users\1000305366\Personal\.venv\lib\site-packages\IPython\core\formatters.py:347: FutureWarning: DatetimeIndex.format is deprecated and will be removed in a future version. Convert using index.astype(str) or index.map(formatter) instead.
+  return method()
+
+2024-03-12 18:34:41,414:WARNING:c:\Users\1000305366\Personal\.venv\lib\site-packages\IPython\core\formatters.py:347: FutureWarning: Index.format is deprecated and will be removed in a future version. Convert using index.astype(str) or index.map(formatter) instead.
+  return method()
+
+2024-03-12 18:34:41,418:WARNING:c:\Users\1000305366\Personal\.venv\lib\site-packages\IPython\core\formatters.py:347: FutureWarning: DatetimeIndex.format is deprecated and will be removed in a future version. Convert using index.astype(str) or index.map(formatter) instead.
+  return method()
+
+2024-03-12 18:42:21,844:WARNING:c:\Users\1000305366\Personal\.venv\lib\site-packages\IPython\core\formatters.py:347: FutureWarning: Index.format is deprecated and will be removed in a future version. Convert using index.astype(str) or index.map(formatter) instead.
+  return method()
+
+2024-03-12 18:42:21,844:WARNING:c:\Users\1000305366\Personal\.venv\lib\site-packages\IPython\core\formatters.py:347: FutureWarning: DatetimeIndex.format is deprecated and will be removed in a future version. Convert using index.astype(str) or index.map(formatter) instead.
+  return method()
+
+2024-03-12 18:42:21,909:WARNING:c:\Users\1000305366\Personal\.venv\lib\site-packages\IPython\core\formatters.py:347: FutureWarning: Index.format is deprecated and will be removed in a future version. Convert using index.astype(str) or index.map(formatter) instead.
+  return method()
+
+2024-03-12 18:42:21,914:WARNING:c:\Users\1000305366\Personal\.venv\lib\site-packages\IPython\core\formatters.py:347: FutureWarning: DatetimeIndex.format is deprecated and will be removed in a future version. Convert using index.astype(str) or index.map(formatter) instead.
+  return method()
+

@@ -1,0 +1,240 @@
+\chapter{Experimental design}
+\section{Benchmark Portfolio}
+It's crucial to have a precise and clear method to measure your portfolio since a financial market's aspects are always changing. In order to do this, benchmark portfolios should provide investors with a realistic assessment of how their portfolio are performing relative to the important and specialised market categories.We can evaluating our portfolio's total performance with respect to predetermined benchmarks, such as a market indices or a group of asset classes, by using a benchmark portfolio. These indexes are "passive" and unmanaged, in contrast to the actively managed investment portfolio that makes up your overall investment portfolio. As a result, benchmark portfolios may be used to assess the value a manager brings to your portfolio.\\
+We are going to use BSE Sensex as Benchmark Portfolio\\
+Theory The benchmark index of BSE is referred as Sensex. The 30 biggest and most
+popular companies on the BSE make up the Sensex, which serves as a bellwether for the Indian economy. It is market capitalisation-weighted and loat-adjusted. Every year, between June and December, the Sensex is evaluated and Rebalanced. The Sensex is run by Standard \& Poor's and is the earliest known stock index in India, having been founded in 1986. It is used by analysts and investors to track the economic cycles in India as well as the growth and decline of certain sectors \cite{Ma2021} .
+\section{Traditional Portfolio Optimization Methods}
+
+\subsection{Equal-Weighted Portfolio Optimization}
+The equal-weighted portfolio optimization technique is a simple, yet effective strategy for allocating capital across different assets. Unlike traditional methods that rely on complex optimization algorithms and historical data, equal weighting assigns the same proportion of capital to each asset in the portfolio, regardless of its individual risk, return, or market capitalization \cite{DeMiguel20091915}.
+
+The formula for calculating the weight of each asset in an equal-weighted portfolio is:
+
+\[w_i = \frac{1}{N}\]
+Where:
+
+$w_i$ is the weight of asset i.
+
+$N$ is the total number of assets in the portfolio.
+
+\subsection{Maximum Diversification Portfolio Optimization}
+One of the most crucial factors to take into account when building an investing portfolio is spreading assets out to lower risk. One strategy is to diversify as much as possible. It is a portfolio strategy that seeks to build the most diversified portfolio achievable. The strategy specifically aims to increase the diversification ratio. Hence, the greatest diversity method is a risk-based allocation strategy than ignores predicted returns. The strategy aims to create a portfolio with a wide range of investments \citep{Theron2018}.
+
+\[\underset{w}{\min}\qquad \frac{P' (w) \cdot \Sigma}{\sqrt{P'VP}}\]
+Where:
+
+$P$: is the portfolio weights.
+
+$\Sigma$: is the asset volatilities.
+
+$V$: covariance matrix of these assets.
+
+$r_{f}$: is the risk free rate.\\
+
+\subsection{Risk Parity Portfolio Optimisation}
+An method to asset management known as risk parity optimisation places more emphasis on risk allocation rather than capital allocation, which is often referred to as volatility. According to the risk parity method, the risk parity portfolio may produce a better Sharpe ratio and can be more resilient to market downturns than the standard portfolio when asset allocations are modified to the same risk level. Risk parity is susceptible to substantial changes in correlation regimes, as was seen in Q1 2020, which caused risk-parity funds to perform much worse than average during the Covid-19 sell-off \citep{Feng2016}.
+
+\[\begin{aligned}
+&\underset{w}{\min} & & \phi(w) \\
+&\text{s.t.} & & b \log(w) \geq c \\
+& & & w \geq 0 \\
+\end{aligned}\]
+Where:
+
+$w$: weights of the portfolio.
+
+$b$: risk contribution constraints.
+
+$\phi(w)$: Standard Deviation of the portfolio
+
+$c$: is an arbitrary constant.
+
+\subsection{Mean Variance Portfolio Optimisation}
+The objective of creating a portfolio of assets using modern portfolio theory (MPT), also known as mean-variance optimisation, is to maximise anticipated return for a certain degree of risk. It formalises and broadens the concept of diversity in investment, which holds that having a variety of financial assets reduces risk compared to holding a single kind. Its main conclusion is that an investment's return and risk should not be evaluated on its own, but rather in the context of the risk and return of the whole portfolio. It substitutes asset price variation for risk. \citep{Markowitz1952}\\
+
+\[\underset{w}{\max}\qquad \frac{R (w) - r_{f}}{\phi(w)}\]
+Where:
+
+$R(w)$ is the return function:
+
+$w$: is the vector of weights of the portfolio.
+
+$\phi(w)$: Standard Deviation of the portfolio.
+
+$r_{f}$: is the risk free rate.\\
+
+\subsection{Mean-Absolute Deviation Portfolio Optimisation}
+The mean-absolute deviation (MAD) model, initially proposed by \citep{Konno1991} and later refined by \citep{Konno2005}, proves to be applicable in addressing extensive and highly diversified portfolio selection challenges. This approach finds utility in scenarios such as long-term asset liability management (ALM), as highlighted by the model developed by \cite{Clark2006}, and in mortgage-backed security models, exemplified by the work of \citep{Hayre2002}. Particularly, these models are effective when investments are intended for prolonged periods and involve diversified portfolios.
+
+An application of robust portfolio optimization utilizing MAD, as presented by \cite{Moon2011}, was implemented on diverse stock market data, specifically the NYSE dataset from 2003. Notably, this application demonstrated a reduction in computational complexity, yielding optimal results. MAD is observed to outperform mean-variance models based on \citep{Markowitz1952} principles. However, it's important to note a limitation of this model: it penalizes both positive and negative deviations. The mathematical representation of this model is in accordance with the formulation by \citep{Konno1991}.
+
+\[\begin{aligned} minimize~ w(x) = E \mid \sum _{j=1}^{n}R_j x_j - E \sum _{j=1}^{n}R_j x_j \mid \nonumber \\ \hbox { subject to } \sum _{j=1}^{n}E\mid R_j \mid x_j \ge \rho M_0,\hbox { and }\nonumber \\ \sum _{j=1}^{n}x_j = M_0, \end{aligned}\]
+
+$0 \le x_j \le u_j, j=1,2, ..., n$ where $R_j$ is the return of asset j, $x_j$ is the amount invested in asset j, $rho$ is a parameter representing the minimal rate of return required by an investor, $M_0$ is the total amount of fund and $u_j$ is the maximum amount of money which can be invested in an asset j.
+
+\subsection{Minimax Portfolio Optimisation}
+The Minimax (MM) model, as introduced by \cite{Cai2004} and further discussed by \cite{Li2019}, utilizes the minimum return as a risk metric. When dealing with multivariate and normally distributed asset returns, both Minimax \cite{Cai2004} and the mean-variance model by \citep{Markowitz1952} yield equivalent results. Notably, Minimax exhibits advantages in scenarios where returns deviate from normal distribution. Its efficiency, attributed to linear programming, makes it a fast and adaptable choice for complex models and constraints. However, a drawback of Minimax lies in its sensitivity to outliers, rendering it unsuitable for situations with missing historical data. The mathematical representation of this model aligns with the formulation proposed by \cite{Cai2004}.
+
+\[\begin{aligned}&max~ M_p \nonumber \\&\hbox { subject to } \sum _{j=1}^{N} w_j y_j - M_p \ge 0, t=1, 2, ..., T,\nonumber \\&\sum _{j=1}^{N} w_j \overline{y_j} \ge G, \nonumber \\&\sum _{j=1}^{N} w_j \le W, \nonumber \\&w_j \ge 0, j=1, 2, ..., N \end{aligned}\]
+
+where, $y_i$  is the return on one dollar invested in a security j in a time period t, $\bar{y_i}$ is the average return on security j, $w_j$  is the portfolio allocation to security j, $M_p$ is the minimum return on portfolio, G is the minimum level of return and W is the total allocation.
+
+\subsection{Lower partial moment Portfolio Optimisation}
+
+The Lower Partial Moment (LPM), initially introduced by \cite{Nawrocki1992} and later discussed by \cite{Brogan2008}, employs a series of moments to assess downside risk within a portfolio. Continuous research has identified various types of moments that can be considered in the context of LPM. These multiple lower moments (N) are systematically examined as part of the LPM framework. The methodology is then utilized in calculating performance metrics such as the Sortino ratio, Omega ratio, and Kappa ratio, as described by \cite{Chen2016a}. The formal definition of this model aligns with the formulation proposed by \cite{Nawrocki1992}.
+
+\[\begin{aligned} LPM_\alpha (\tau , Ri) = \int _{-\infty }^{\tau } (\tau - R)^\alpha ~\partial F(R) \end{aligned}\]
+
+where, $\alpha$ is the degree of LPM, $\tau$ is the target return, R is the return, and $\partial F(R)$ is the cumulative distribution function of the asset return R.
+
+\section{Machine Learning Models}
+
+\subsection{Random forest (RF)}
+The Random Forest (RF), a nonparametric and nonlinear model, was initially introduced by \cite{ho1995random} and later expounded upon by Breiman in 2001. Renowned for its ability to mitigate overfitting issues due to its inherent convergence \cite{breiman2001random}, RF has become a popular choice for stock prediction tasks (\cite{Ballings2015}; \cite{Booth2014}; \cite{qin2013linear}). The key parameters influencing the performance of RF include the number of decision trees, the maximum depth of the trees (referred to as max-depth), the minimum number of samples required to split an internal node (min-samples-split), the minimum number of samples necessary to form a leaf node (min-samples-leaf), and the number of features considered when seeking the best split (max-features).
+
+%In this study, the number of decision trees is set to 500 based on Breiman's recommendation \cite{breiman2001random}. %The values for the other parameters are specified in Table 4. Grid search methodology is employed to identify the optimal parameters for the RF model in the context of stock prediction.
+
+\subsection{Support vector regression (SVR)}
+
+Support Vector Regression (SVR) is a well-established machine learning model that has found extensive applications in stock market prediction (\cite{Emir2013}; \cite{Lu2009}; \cite{Matias2012}; \cite{Rasel2015}). Employing Vapnik's Structural Risk Minimization (SRM) principle, SVR effectively addresses various regression challenges. Rooted in statistical learning theory, SVR guides the regulation of generalization, aiming to strike the optimal balance between model complexity and empirical risk.
+
+
+\subsection{Autoregressive integrated moving average (ARIMA) model}
+
+ARIMA is a classical statistical model, which is often used in stock prediction. The ARIMA model can be presented as follows:
+\[(1 - \sum_{i=1}^{p} \phi_i{L^{i}})(1 - L_i)^d \cdot r_t = \delta + (1 - \sum_{i=1}^{q} \theta_i{L^i}) \varepsilon_t\]
+where $p$, $d$, $q$, $L$, $\phi_i$, $\theta_i$ and $\varepsilon_t$ represent the number of autoregressive terms, the number of difference times, the number of moving average terms, lag operator, autoregressive parameter, moving average parameter and error term respectively \cite{Yu2020}. $p$,$d$,$q$ need to be determined before using ARIMA model. Since ARIMA model needs some restrict hypotheses such as stationarity test, this paper set the values of $p$,$d$,$q$ before each training process.
+%  need to be determined before using ARIMA model. Since ARIMA model needs some restrict hypotheses such as stationarity test, this paper set the values of 
+%  before each training process.
+
+\subsection{Mean-variance with forecasting (MVF) model}
+\cite{Markowitz1952} is recognized as the precursor of modern finance theory, having introduced the mean-variance (MV) model that provided a mathematical approach to balancing the trade-off between maximizing expected return and minimizing risk. In accordance with the framework proposed by \cite{Yu2020}, this study integrates the predictive outcomes related to returns to enhance the MV model for constructing the Mean-Variance-Forecast (MVF) model.
+
+The MVF model essentially represents a multi-objective optimization problem. The subsequent equations articulate the formulation of the MVF model.
+
+\[
+\min \sum_{i,j=1}^{n} x_i x_j \sigma_{ij} \quad
+\]
+\[
+\max \sum_{i=1}^{n} x_i \hat{r}_i \quad
+\]
+\[
+\max \sum_{i=1}^{n} x_i \bar{\varepsilon}_i \quad
+\]
+\[
+\text{Subject to} \quad \sum_{i=1}^{n} x_i = 1 \quad
+\]
+\[
+0 \leq x_i \leq 1, \quad i=1,2,\ldots,n \quad
+\]
+
+where $x_i$ denotes the proportion of asset $i$ in the portfolio, $n$ is the number of assets in the portfolio, $\sigma_{ij}$ is the covariance of asset $i$ and $j$, $\hat{r}_i$ denotes the predicted return of asset $i$, and $\bar{\varepsilon}_i$ represents the average predictive errors of asset $i$ over the sample period. \cite{Ma2021} sets the sample period as 20 trading days to build the MVF model according to \cite{Yu2020}. In other words, $\hat{r}_i$ is the predicted return of asset $i$ at time $t$, and $\bar{\varepsilon}_i$ means the average predictive error of asset $i$ over the past 20 trading days, i.e., time $t, t-1, \ldots, t-19$. The predictive error of asset $i$ at time $t$ equals to $\varepsilon_i = r_i - \hat{r}_i$, where $r_i$ represents the actual return of asset $i$. Eqs. (4)-(5) mean maximization of the expected portfolio return and the sample period's abnormal return, respectively.
+
+The equal-weighted method is often used to convert the above multiple objective portfolio optimization to a single objective model (\cite{Yu2020}). Thus, the MVF model becomes the following form:
+\[
+\min \sum_{i,j=1}^{n} x_i x_j \sigma_{ij} - \sum_{i=1}^{n} x_i \hat{r}_i - \sum_{i=1}^{n} x_i \bar{\varepsilon}_i \quad 
+\]
+\[
+\text{Subject to} \quad \sum_{i=1}^{n} x_i = 1 \quad 
+\]
+\[
+0 \leq x_i \leq 1, \quad i=1,2,\ldots,n \quad 
+\]
+
+\subsection{Omega with forecasting (OF) model}
+
+The Omega ratio was initially introduced by \cite{keating2002universal} and has since been widely utilized for portfolio construction due to its ability to overcome the limitations of the Sharpe ratio (\cite{Gilli2011}; \cite{Kane2009}; \cite{Kapsos2014}). The Omega ratio is defined as follows:
+
+\[
+    \quad \omega = \frac{E(y_i) - \tau}{E\left [ \tau - y_i \right ]}  + 1
+\]
+
+where $\tau$ represents the threshold for dividing returns into expected (revenue) and unexpected (loss), determined by investors, and $y_i$ signifies the random return of asset $i$. Since the Omega ratio requires the probability distribution of asset returns, the solution becomes biased and overly optimistic when this distribution is imprecise \cite{Kapsos2014}. To address this issue, \cite{Kapsos2014} introduced the worst-case Omega ratio (WCOR) and modified the Omega model as follows:
+
+\[
+\quad \max \psi
+\]
+\[
+\text{Subject to}\]
+\[ \quad \delta \left( \sum_{j=1}^{n} x_j \bar{r^{i}_{j}} - \tau \right) - (1-\delta) \frac{1}{T^i} \sum_{t=1}^{T^i} \eta^i_{t} \geq \psi \\\]
+\[ \quad \eta^i_{t} \geq -\sum_{j=1}^{n} x_j \bar{r^i_j} + \tau \\\]
+\[ \quad \eta^i_{t} \geq 0 \\\]
+\[ \quad \sum_{j=1}^{n} x_j = 1 \\\]
+\[ \quad 0 \leq x_i \leq 1 \\\]
+\[ \quad t=1,2,\ldots,T^i; \quad i=1,2,\ldots,l; \quad j=1,2,\ldots,n
+\]
+
+where $x_i$ represents the proportion of asset $i$ in the portfolio, $\eta_{it}$ is an auxiliary variable used to linearize this portfolio model, $\delta$ denotes the risk-return preference of this model, $T_i$ signifies the sample period of the $i$-th distribution, $\bar{r}_{ij}$ represents the sample period’s mean return of the $i$-th distribution, $l$ is the number of distributions, and $n$ is the number of assets in the portfolio. This paper sets $\delta$, $T_i$, $\tau$, and $l$ as 0.5, 20, 0, and 1, respectively, according to \cite{Yu2020}.
+
+Subsequently, return predictive results can be combined with this model to build the Omega Forecast (OF) model, similar to the MVF model:
+
+\[
+\quad \max \psi \quad \max \sum_{i=1}^{n} x_i \hat{r}_i \max \sum_{i=1}^{n} x_i \bar{\varepsilon}_i
+\]
+\[
+\text{Subject to} \quad\]
+\[\quad 0.5 \left( \sum_{i=1}^{n} x_i \bar{r}_i \right) - 0.5 \sum_{t=1}^{20} \eta_t \geq \psi \\\]
+\[\quad \eta_t \geq -\sum_{i=1}^{n} x_i \bar{r}_i \\\]
+\[\quad \eta_t \geq 0 \\\]
+\[\quad \sum_{i=1}^{n} x_i = 1 \\\]
+\[\quad 0 \leq x_i \leq 1 \\\]
+\[\quad t=1,2,\ldots,20; \quad i=1,2,\ldots,n \\
+\]
+
+Similarly, the multi-objective optimization model can be converted to a single objective model, following \cite{Yu2020}:
+
+\[
+\text{(26)} \quad \min -\psi - \sum_{i=1}^{n} x_i \hat{r}_i - \sum_{i=1}^{n} x_i \bar{\varepsilon}_i
+\]
+\[
+\text{Subject to}\]
+\[\quad 0.5 \left( \sum_{i=1}^{n} x_i \bar{r}_i \right) - 0.5 \sum_{t=1}^{20} \eta_t \geq \psi \\\]
+\[\quad \eta_t \geq -\sum_{i=1}^{n} x_i \bar{r}_i \\\]
+\[\quad \eta_t \geq 0 \\\]
+\[\quad \sum_{i=1}^{n} x_i = 1 \\\]
+\[\quad 0 \leq x_i \leq 1 \\\]
+\[\quad t=1,2,\ldots,20; \quad i=1,2,\ldots,n \\ 
+\]
+
+
+
+
+\section{Deep Learning Models}
+
+\subsection{Deep multilayer perceptron (DMLP)}
+
+DMLP, a classic Artificial Neural Network (ANN), distinguishes itself from the multilayer perceptron (MLP) by incorporating a greater number of hidden layers. While MLP is theoretically capable of approximating arbitrary functions in terms of mapping abilities \cite{principe1999neural}, empirical evidence suggests that DMLP often outperforms MLP with few hidden layers \cite{Orimoloye2020, Singh2017}. The DMLP model comprises three components: the input layer, hidden layer, and output layer. In this study, stochastic gradient descent is employed to train DMLP, and the early stopping technique is implemented to mitigate overfitting issues during the training process. The primary hyperparameters of DMLP include hidden nodes, hidden layers, optimizer, learning rate, activation function, loss function, batch size, and patience. Following the recommendation by \cite{Orimoloye2020}, the rectified linear unit (relu) function is selected as the activation function. %The specific values for the other hyperparameters are outlined in Table 1. Grid search methodology is utilized to identify the optimal hyperparameters.
+% \begin{table}[htbp]
+%     \centering
+%     \caption{Parameters of DMLP}
+%     \begin{tabular}{|c|c|}
+%         \hline
+%         \textbf{Parameter} & \textbf{Value} \\
+%         \hline
+%         Hidden nodes & 5, 10, 15, 20, 25, 30 \\
+%         \hline
+%         Hidden layers & 1, 2, 3, $\ldots$, 10 \\
+%         \hline
+%         Learning rate & 0.0001, 0.001, 0.01, 0.1 \\
+%         \hline
+%         Patient & 0, 5, 10 \\
+%         \hline
+%         Batch size & 50, 100, 200 \\
+%         \hline
+%         Loss function & Mean absolute error \\
+%         \hline
+%         Optimizer & SGD, RMSprop, Adam \\
+%         \hline
+%     \end{tabular}
+% \end{table}
+
+\subsection{Long short term memory (LSTM) neural network}
+
+The Long Short-Term Memory (LSTM) neural network, a type of recurrent neural network, was introduced to address the limitations of conventional recurrent neural networks by preserving long-term information \cite{Graves2005}. This attribute is primarily attributed to the presence of memory cells in the hidden layer. The typical architecture of an LSTM neural network includes an input layer, hidden layer, and output layer. In this study, training of the LSTM neural network is conducted using stochastic gradient descent, and early stopping techniques are employed to mitigate overfitting. The considered hyperparameters for the LSTM neural network encompass hidden nodes, hidden layers, learning rate, batch size, patience, dropout rate, recurrent dropout rate, activation function, optimizer, and loss function. As per the recommendation by \citep{Orimoloye2020} the rectified linear unit (relu) function is chosen as the activation function. %The specific values for the other hyperparameters are detailed in Table 2, and grid search methodology is applied to identify the optimal settings.
+
+% Through iterative experimentation, the optimal hyperparameters for the LSTM neural network are determined. The network topology comprises four hidden layers, each containing five nodes. The chosen values for learning rate, patience, batch size, dropout rate, recurrent dropout rate, and optimizer are 0.01, 0, 100, 0.4, 0.3, and RMSprop, respectively. Subsequently, this LSTM neural network model is utilized for return prediction in the subsequent analysis.
+
+\subsection{Convolutional neural network (CNN)}
+
+The Convolutional Neural Network (CNN), an innovative type of Artificial Neural Network (ANN), was introduced by \cite{lecun1995convolutional}. CNNs are commonly utilized in computer vision and image processing, consistently demonstrating impressive performance (\cite{ji20123d}; \cite{long2015fully}). In recent years, researchers have explored the application of CNNs in stock price prediction, yielding promising results (\cite{Hoseinzade2019}; Sezer and \cite{Sezer2018}). The typical structure of a CNN involves multiple consecutive convolutional layers and pooling layers, followed by fully connected layers. Given that stock returns are time series data, this study employs a one-dimensional (1D) CNN for stock return prediction. Similar to the LSTM neural network, the stochastic gradient descent method is utilized for training the CNN, and early stopping is employed to address overfitting concerns. The hyperparameters considered for the CNN in this study encompass filter numbers, convolutional layers, maxpooling layers, fully connected layers, fully connected layer nodes, learning rate, patience, batch size, activation function, optimizer, and loss function. %The specified values for these hyperparameters are detailed in Table 3, with grid search methodology being employed to identify the optimal settings.
